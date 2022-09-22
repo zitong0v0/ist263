@@ -1,0 +1,41 @@
+<!DOCTYPE html> <!--'!' shortcut-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Food Order Form</h1>
+   <form method="post" action="">
+        <label for="fullname">Name:</label>
+        <input type="text" id="fullname" name="fullname"> <br> <!--input is an inline tag-->
+        <label for="specialinstructions">Special Instructions:</label>
+        <textarea id="specialinstructions" name="specialinstructions"></textarea> <br> <!--no space in id and name-->
+
+        <label for="delivery">Delivery</label>
+        <input type="radio" id="delivery" name="deliverypickup" value="delivery">
+
+        <label for="pickup">Pickup</label>
+        <input type="radio" id="pickup" name="deliverypickup" value="pickup" checked> <br> <!--checked = forced user into a choice--> 
+
+        <label for="plastic">Do you need plastic utensils?</label> <!--label for" " is the id name you want to link to the label-->
+        <input type="checkbox" id="plastic" name="plastic" value="yes"> <br>
+
+        <label for="region">What region?</label>
+        <select id="region" name="region">
+            <!--<option></option> = means no value in it, it's blank-->
+            <option value="westcott">Westcott</option>
+            <option value="downtown">Downtown</option>
+            <option value="eastwood">Eastwood</option>
+            <option value="oak street">Oak Street</option>
+
+        </select><br> <!--select is also an inline tag-->
+        <input type="submit" value="send my form"> 
+        <!--id cannot be the same name, but name can be same name because they're in the same thing-->
+        
+
+   </form> 
+</body>
+</html>
