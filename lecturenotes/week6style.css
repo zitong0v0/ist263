@@ -1,0 +1,17 @@
+ /*group element selector*/
+ p,h1 {
+    color:rgb(228, 102, 121);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5em; /*1.5em means 150% = comments in CSS */
+    font-weight:bolder; /*or number */
+}
+/* descendant selector pick an element inside another element*/s
+p a{
+    color:aquamarine; /*change all link to this color, this is a selector*/
+}
+#firstbullet{
+    color:lightblue;
+}
+.pinktext{
+    color:pink;
+}
