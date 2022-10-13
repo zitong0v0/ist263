@@ -1,0 +1,26 @@
+body {
+    font-family: Tahoma, sans-serif;
+  }
+  p, h1, h2 {
+    color:#EEECDE;
+  }
+  body{
+    background-color:#F2ACB0;
+  }
+  p a{
+    color:#88E5CD;
+  }
+  nav {
+    background-color:#b6e3ea;
+
+  }
+  nav a{
+    color:#be9dcb;
+  }
+  nav a:hover{
+     background-color:#9f9ca1;
+  }
+  nav {
+    padding:10px;
+    margin-bottom: 30px;
+  }

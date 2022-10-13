@@ -1,0 +1,30 @@
+p {
+    color:#ffae00;
+    /*background color in paragraph*/
+    background-color: #fff4d6;
+    
+}
+
+/*changes color of visited link*/
+a:visited {
+    color:#00ff00;
+}
+
+/*hover = only changes color when you mouse is on that link*/
+a:hover {
+    color: #b042f5;
+}
+
+/*any thing goes to the whole page has to go to the body*/
+body {
+    background-color:black;
+    background-image:url("../image/pumpkin.png");
+    background-repeat: no-repeat;
+    /*you can also put background image in paragraph*/
+}
+
+.second {
+    border: 2px solid#ff0000;
+    padding: 10px;
+    margin: 20px;
+}

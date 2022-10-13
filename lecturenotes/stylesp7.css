@@ -1,0 +1,11 @@
+p {
+    background-color: #faebd7;
+}
+body {
+    background-image:url("../image/ottop7.png");
+}
+
+.border {
+    border: 2px solid #eb3492;
+    padding:10px;
+}
