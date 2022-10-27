@@ -1,11 +1,9 @@
-
 body {
     font-family: Tahoma, sans-serif;
   }
   p, h1, h2, h3 {
     color:#2c4b82;
   }
-  
   body{
     background-color:#f0f3f9;
   }
@@ -42,5 +40,3 @@ body {
  .part2 {display: flex; background-color: #ffffff; border-radius: 5em;}
  .part2 div {padding: 25px;}
  .feedback, .map {margin:80px;}
-
-
