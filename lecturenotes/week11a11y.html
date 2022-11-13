@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+    <style>
+        /* Exam 2 short answer question*/
+        .welcome {
+            display: flex;
+            justify-content: center;
+        }
+        .skip {
+            background-color: #ffa500; /*put mouse on the color cube and click rgb to change to hex color*/
+            padding: 5px;
+            border: 1px solid black; /*solid + color means the color of the border*/
+            position: absolute;
+            top: 30px;
+            left: -999px; /* pushes it off screen */
+        }
+        /* focus is a psuedo class that means the element has been tabbed to */
+        .skip:focus {
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#content" class="skip" tabindex="1">Skip to Content</a><br>
+     <!--# tag is the ID, it will show "skip to content" button -->
+    <!--select the serach link part of the web, and then press tab so you cna browse the website part by part-->
+    <!-- tab index = the order when browsing the web-->
+    <a href="http://www.syr.edu" tabindex="2">Syracuse U.</a><br>
+    <a href="http://www.google.com" tabindex="3">Google</a><br>
+    <a href="http://www.amazon.com" tabindex="4">Amazon</a>
+
+    <!--Exam 2 short answer -->
+    <div class="welcome">Hello World</div>
+
+    <!-- p is id not class is because it is unique id-->
+    <p id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui optio quaerat magni quibusdam eos facere sit quod deleniti deserunt est. A qui ab alias omnis doloremque corporis sequi distinctio ullam?</p>
+</body>
+</html>

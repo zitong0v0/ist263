@@ -5,7 +5,7 @@
     font-size: 1.5em; /*1.5em means 150% = comments in CSS */
     font-weight:bolder; /*or number */
 }
-/* descendant selector pick an element inside another element*/s
+/* descendant selector pick an element inside another element*/
 p a{
     color:aquamarine; /*change all link to this color, this is a selector*/
 }

@@ -1,0 +1,70 @@
+body {
+    font-family: Tahoma, sans-serif;
+  }
+  p, h1, h2, h3 {
+    color:#2c4b82;
+  }
+  body{
+    background-color:#f0f3f9;
+  }
+  p a{
+    color:#88E5CD;
+  }
+  nav {
+    background-color:#b6e3ea;
+
+  }
+  nav a{
+    color:#be9dcb;
+  }
+  nav a:hover{
+     background-color:#9f9ca1;
+  }
+  nav {
+    padding:10px;
+    margin-bottom: 30px;
+  }
+
+ .quote {float:right; margin-top: 1px;}
+
+ .meimg {float:left; margin-right: 40px;}
+ .clear {clear:both;}
+
+
+ .part1, .part2 {margin: 20px;}
+ .part1 {display: flex; background-color: #ffffff; border-radius: 5em;}
+ .part1 div {padding: 25px;}
+ .address, .link {margin: 20px;}
+ .link {margin-top: 30px;}
+
+ .part2 {display: flex; background-color: #ffffff; border-radius: 5em;}
+ .part2 div {padding: 25px;}
+ .feedback, .map {margin:80px;}
+
+ /* 11.3 reponsive design */
+ .meimg {max-width: 100%;}
+
+ .part2 {flex-wrap: wrap;}
+
+ @media only screen and (max-width: 992px) { /* allows the navigation to be vertically displayed */
+  nav a{display: block;
+    width:100%;
+  }
+  span {display: none;}
+ }
+ @media only screen and (min-width: 600px) {
+  nav a {display: 100%, block;}
+
+ }
+ /* Lab 11 */
+ .skip {
+  background-color: #ffa500; /*put mouse on the color cube and click rgb to change to hex color*/
+  padding: 5px;
+  border: 1px solid black; /*solid + color means the color of the border*/
+  position: absolute;
+  top: 30px;
+  left: -999px; /* pushes it off screen */
+}
+.skip:focus {
+  left: 10px;
+}
