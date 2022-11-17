@@ -1,0 +1,27 @@
+/* same to 3 pages */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.navbrand {
+    color:#1b265d;
+}
+.navlinks {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.home, .collection, .gallery, .contact {
+    margin-left: 3.0em;
+}
+a:hover {
+    color:#ffffff;
+}
+a:link {
+    color:#1b265d;
+}
+a:visited {
+    color:#1b265d;
+}
