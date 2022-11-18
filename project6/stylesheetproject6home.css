@@ -1,0 +1,38 @@
+/* same to 3 pages */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em;
+    background-color: #5f4c9d;
+   
+}
+.navbrand {
+    color:#f0e7fe;
+    padding: 1px;
+    margin-left: 20px;
+}
+
+.home, .collection, .gallery, .contact {
+    margin-left: 3.0em;
+}
+/* nav bar home page */
+header ul {
+    display: flex;
+}
+header ul li {
+    list-style: none;
+}
+header ul li a {
+    font-family: 'Alegreya Sans SC';font-size: 19px;
+    font-weight: 400;
+    text-decoration: none;
+    color:#ffffff;
+    margin-right: 10px;
+}
+a:hover {
+    color:pink;
+    border: 2px solid;
+    border-radius: 5px;
+}
+

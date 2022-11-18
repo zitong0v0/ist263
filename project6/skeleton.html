@@ -5,48 +5,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S.Collection</title>
-    <link rel="stylesheet" href="stylesheetproject6.css">
+    <link rel="stylesheet" href="stylesheetproject6home.css">
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
     <style>
         body {
-            background-image:url("../project/images/background.jpg");
+            background-image:url("../project/images/bck.jpg");
             background-repeat: no-repeat;
             background-color: #D4E6E3;
         }
+        h2 {
+            font-family: 'Alegreya Sans SC';font-size: 22px;
+        }
+        h1 {
+            font-family: 'Alegreya Sans SC';font-size: 45px;
+            margin-left: 60px;
+        }
+        h1 span {
+            color:#405060;
+            font-size: 1.9em;
+            font-weight: 900;
+            margin-left: 20px;
+        }
         
+        .content {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .content .textbox {
+            position: relative;
+            max-width: 600px;
+        }
+
+        .content .textbox p {
+            font-family: 'Alegreya Sans SC';font-size: 20px;
+            padding: 40px;
+            border-radius: 1em;
+            background-color: #ffffff;
+            margin-left: 80px;
+        }
+        .content .textbox a {
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 270px;
+            padding: 8px 20px;
+            background-color: #4a5662;
+            color: #ffffff;
+            border-radius: 40px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        .content .imgbox {
+            width: 550px;
+            display: flex;
+            margin-right: 120px;
+            margin-top: 70px;
+        }
+        .video {
+            position:relative;
+        }
+        .circle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color:#8888d7;
+            clip-path: circle(300px at left 800px);
+        }
+
     </style>
 </head>
+
 <body>
-    <!-- ADD header? -->
-    <!--Navigation Bar, add search bar later-->
-    <nav class="navbar">
-        <h2 class="navbrand">S. Collection</h2>
-        <ul class="navlinks">
-             <div class="home">
-                    <a href="skeleton.html">Home</a>
-             </div>
-             <div class="collection">
-                    <a href="collection.html">Collection</a>  
-             </div>
-             <div class="gallery">
-                <a href="recom.html">Gallery</a> 
-             </div>
-             <div class="contact">
-                 <a href="recom.html">Contact</a></nav>
-             </div>
-        </ul>         
-    </nav>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <nav class="navbar">
+                <h2 class="navbrand">S. Collection</h2>
+                <ul>
+                     <li class="home">
+                            <a href="skeleton.html">Home</a>
+                     </li>
+                     <li class="collection">
+                            <a href="collection.html">Collection</a>  
+                     </li>
+                     <li class="gallery">
+                        <a href="recom.html">Gallery</a> 
+                     </li>
+                     <li class="contact">
+                         <a href="recom.html">Contact</a></nav>
+                     </li>
+                </ul>         
+            </nav>
+        </header>
+
+        
+        <div class="content">
+            <div class="textbox">
+                <h1>About<br><span>S. Collection</span></h1>
+
+                <p>A place for stationary, keychain, and miniature enthusiasts. These little things are collected in private collections. This website will guide you in selecting the most suitable, attractive, and convenient product by showing the aesthetics of each. These three things are the inspiration for this website, you will find plenty of resources here.</p>
+
+                <a href="collection.html">Learn More</a>
+            </div>
+
+            <div class="imgbox">
+                <video autoplay loop muted plays-inline width="600" height="450" class="video">
+                    <source src="../project/images/ball3.mp4" height=500 width=600 type="video/mp4">
+                </video>
+                
+            </div>
+        </div>
+    </section>
   
-    
-
-   <!--Home page-->
    
-   <h1>About<br>S. Collection</h1>
-   <p>A place for stationary, keychain, and miniature enthusiasts. These little things are collected in private collections. This website will guide you in selecting the most suitable, attractive, and convenient product by showing the aesthetics of each. These three things are the inspiration for this website, you will find plenty of resources here. Each collection type can be found under Category.</p>
-
-   <!--home page image - need to change the size later-->
-   <img src="../project/images/homepagewater.jpeg" width="1024" height="500" alt="homepage water" class="waterimg">
-
-   <!--add hyperlink and button later-->
+  
 
 
 
