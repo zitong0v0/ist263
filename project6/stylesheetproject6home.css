@@ -16,6 +16,9 @@
 .home, .collection, .gallery, .contact {
     margin-left: 3.0em;
 }
+/* 3 pages end here */
+
+
 /* nav bar home page */
 header ul {
     display: flex;
@@ -35,4 +38,84 @@ a:hover {
     border: 2px solid;
     border-radius: 5px;
 }
+/* Nav bar home page ends here */
 
+
+
+
+/* Home Page styles goes here */
+body {
+    background-image:url("../project/images/bck.jpg");
+    background-repeat: no-repeat;
+    background-color: #D4E6E3;
+}
+h2 {
+    font-family: 'Alegreya Sans SC';font-size: 22px;
+}
+h1 {
+    font-family: 'Alegreya Sans SC';font-size: 45px;
+    margin-left: 60px;
+}
+h1 span {
+    color:#405060;
+    font-size: 1.9em;
+    font-weight: 900;
+    margin-left: 20px;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.content .textbox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textbox p {
+    font-family: 'Alegreya Sans SC';font-size: 20px;
+    padding: 40px;
+    border-radius: 1em;
+    background-color: #ffffff;
+    margin-left: 80px;
+}
+.content .textbox a {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 270px;
+    padding: 8px 20px;
+    background-color: #4a5662;
+    color: #ffffff;
+    border-radius: 40px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.content .imgbox {
+    width: 550px;
+    display: flex;
+    margin-right: 120px;
+    margin-top: 70px;
+}
+.video {
+    position:relative;
+}
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#8888d7;
+    clip-path: circle(300px at left 800px);
+}
+@media only screen and (max-width:600px) {
+    h1 {font-size: 26px;}
+    .content {margin: 10px;}
+    .imgbox {order: 1;}
+    .textbox {order: 2;}
+    
+}
