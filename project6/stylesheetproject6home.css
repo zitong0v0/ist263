@@ -16,10 +16,8 @@
 .home, .collection, .gallery, .contact {
     margin-left: 3.0em;
 }
-/* 3 pages end here */
 
-
-/* nav bar home page */
+/* Header and Nav Bar */
 header ul {
     display: flex;
 }
@@ -37,6 +35,34 @@ a:hover {
     color:pink;
     border: 2px solid;
     border-radius: 5px;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 500px) {
+    .toggle-button {
+        display: flex;
+    }
+    .home, .collection, .gallery, .contact {
+        display: none;
+    }
+    
 }
 /* Nav bar home page ends here */
 
@@ -112,10 +138,4 @@ h1 span {
     background-color:#8888d7;
     clip-path: circle(300px at left 800px);
 }
-@media only screen and (max-width:600px) {
-    h1 {font-size: 26px;}
-    .content {margin: 10px;}
-    .imgbox {order: 1;}
-    .textbox {order: 2;}
-    
-}
+
