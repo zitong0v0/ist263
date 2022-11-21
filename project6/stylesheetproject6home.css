@@ -54,15 +54,75 @@ a:hover {
     border-radius: 10px;
 }
 
+@media only screen and (min-width: 500px) {
+    .toggle-button {display: none;}
 
-@media (max-width: 500px) {
+}
+    
+@media only screen and (max-width: 700px) {
     .toggle-button {
         display: flex;
+        margin-top: 10px;
+        margin-right: 10px;
     }
-    .home, .collection, .gallery, .contact {
-        display: none;
+    .links {
+        /*display: none;*/
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .links li {
+        text-align: center;
+        padding: 5px;
+       
+    }
+    .links li a {
+        margin-top: 20px;
+    }
+    .links.active {
+        display: flex;
+    }
+   
+}
+
+
+@media only screen and (max-width:500px) {
+    .toggle-button {
+        display: flex;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    .links {
+        /*display: none;*/
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .links li {
+        text-align: center;
+        padding: 5px;
+       
+    }
+    .links li a {
+        margin-top: 20px;
+    }
+    .links.active {
+        display: flex;
     }
     
+   
 }
 /* Nav bar home page ends here */
 
