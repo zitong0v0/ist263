@@ -3,14 +3,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0em;
     background-color: #5f4c9d;
    
 }
 .navbrand {
     color:#f0e7fe;
-    padding: 1px;
-    margin-left: 20px;
+    margin-left: 1.25em;
 }
 
 .home, .collection, .gallery, .contact {
@@ -25,11 +23,11 @@ header ul li {
     list-style: none;
 }
 header ul li a {
-    font-family: 'Alegreya Sans SC';font-size: 19px;
+    font-family: 'Alegreya Sans SC';font-size: 1.187em;
     font-weight: 400;
     text-decoration: none;
     color:#ffffff;
-    margin-right: 10px;
+    margin-right: 0.625em;
 }
 a:hover {
     color:pink;
@@ -44,14 +42,14 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 21px;
+    width: 1.875em;
+    height: 1em;
 }
 .toggle-button .bar {
     height: 3px;
     width: 100%;
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 0.14em;
 }
 
 @media only screen and (min-width: 500px) {
@@ -62,8 +60,8 @@ a:hover {
 @media only screen and (max-width: 700px) {
     .toggle-button {
         display: flex;
-        margin-top: 10px;
-        margin-right: 10px;
+        margin-top: 0.625em;
+        margin-right: 0.625em;
     }
     .links {
         /*display: none;*/
@@ -72,6 +70,8 @@ a:hover {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
+        background-color: #5f4c9d;
+        width: 100%;
     }
     .links ul {
         width: 100%;
@@ -79,7 +79,7 @@ a:hover {
     }
     .links li {
         text-align: center;
-        padding: 5px;
+        padding: 10px;
        
     }
     .links li a {
@@ -88,15 +88,30 @@ a:hover {
     .links.active {
         display: flex;
     }
+    h1 {
+        font-size: 2rem;
+    }
+    h1 span {
+        font-size: 3rem;
+
+    }
+    .content {
+        flex-wrap: wrap;
+        overflow-wrap: scroll;
+    }
+    .imgbox {
+        max-width: 100%;
+        overflow-wrap: scroll;
+    }
    
 }
 
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:390px) {
     .toggle-button {
         display: flex;
         margin-top: 10px;
-        margin-right: 10px;
+        
     }
     .links {
         /*display: none;*/
@@ -105,6 +120,8 @@ a:hover {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
+        background-color: #5f4c9d;
+        width: 100%;
     }
     .links ul {
         width: 100%;
@@ -121,10 +138,39 @@ a:hover {
     .links.active {
         display: flex;
     }
-    
+    h1 {
+        font-size: 2rem;
+    }
+    h1 span {
+        font-size: 3rem;
+    }
+    .content {
+        flex-wrap: wrap;
+        overflow-wrap: scroll;
+    }
+    .imgbox {
+        max-width: 100%;
+        overflow-wrap: scroll;
+    }
+   
+
    
 }
 /* Nav bar home page ends here */
+
+/* ally */
+.skip {
+    background-color: #ffffff; /*put mouse on the color cube and click rgb to change to hex color*/
+    padding: 5px;
+    border: 1px solid black; /*solid + color means the color of the border*/
+    position: absolute;
+    top: 30px;
+    left: -999px; /* pushes it off screen */
+}
+/* focus is a psuedo class that means the element has been tabbed to */
+.skip:focus {
+    left: 10px;
+}
 
 
 
@@ -136,7 +182,7 @@ body {
     background-color: #D4E6E3;
 }
 h2 {
-    font-family: 'Alegreya Sans SC';font-size: 22px;
+    font-family: 'Alegreya Sans SC';font-size: 1.375em;
 }
 h1 {
     font-family: 'Alegreya Sans SC';font-size: 45px;

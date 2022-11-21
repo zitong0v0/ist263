@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="homepage.js"></script>
+    <!-- <script src="homepage.js"></script> -->
     <title>S.Collection</title>
     <link rel="stylesheet" href="stylesheetproject6home.css">
     <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
@@ -12,11 +12,12 @@
 </head>
 
 <body>
+    <a href="#content" class="skip" tabindex="1">Skip to Content</a><br>
     <section>
         <div class="circle"></div>
         <header>
             <nav class="navbar">
-                <h2 class="navbrand">S. Collection</h2>
+                <h2 class="navbrand" tabindex="2">S. Collection</h2>
                 <!-- hamburger icon for mobile site -->
                 <a href="#" class="toggle-button">
                     <span class="bar"></span>
@@ -27,16 +28,16 @@
                 <div class="links">
                     <ul>
                         <li class="home">
-                            <a href="skeleton.html">Home</a>
+                            <a href="skeleton.html" tabindex="3">Home</a>
                         </li>
                         <li class="collection">
-                            <a href="collection.html">Collection</a>  
+                            <a href="collection.html" tabindex="4">Collection</a>  
                         </li>
                         <li class="gallery">
-                           <a href="recom.html">Gallery</a> 
+                           <a href="recom.html" tabindex="5">Gallery</a> 
                         </li>
                         <li class="contact">
-                            <a href="recom.html">Contact</a></nav>
+                            <a href="recom.html" tabindex="6">Contact</a></nav>
                         </li>
                    </ul> 
                 </div>
@@ -49,12 +50,12 @@
             <div class="textbox">
                 <h1>About<br><span>S. Collection</span></h1>
 
-                <p>A place for stationary, keychain, and miniature enthusiasts. These little things are collected in private collections. This website will guide you in selecting the most suitable, attractive, and convenient product by showing the aesthetics of each. These three things are the inspiration for this website, you will find plenty of resources here.</p>
+                <p id="#content">A place for stationary, keychain, and miniature enthusiasts. These little things are collected in private collections. This website will guide you in selecting the most suitable, attractive, and convenient product by showing the aesthetics of each. These three things are the inspiration for this website, you will find plenty of resources here.</p>
 
-                <a href="collection.html">Learn More</a>
+                <a href="collection.html" tabindex="8">Learn More</a>
             </div>
 
-            <div class="imgbox">
+            <div class="imgbox" tabindex="9">
                 <video autoplay loop muted plays-inline width="600" height="450" class="video">
                     <source src="../project/images/ball3.mp4" height=500 width=600 type="video/mp4">
                 </video>
