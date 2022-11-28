@@ -23,7 +23,7 @@ header ul li {
     list-style: none;
 }
 header ul li a {
-    font-family: 'Alegreya Sans SC';font-size: 1.187em;
+    font-family: 'Alegreya Sans SC'; font-size: 1.187em;
     font-weight: 400;
     text-decoration: none;
     color:#ffffff;
@@ -64,7 +64,7 @@ a:hover {
         margin-right: 0.625em;
     }
     .links {
-        display: none;
+        /* display: none; */
         width: 100%;
     }
     .navbar {
@@ -114,7 +114,7 @@ a:hover {
         
     }
     .links {
-        display: none;
+        /* display: none; */
         width: 100%;
     }
     .navbar {
