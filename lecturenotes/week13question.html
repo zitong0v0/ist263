@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <style>
+        .red {color: red;}
+        .green {color: green;}
+    </style>
+    <script>
+        function wrongAnswer () {
+            document.getElementById("wrong").innerHTML = "<span class='red'>True is incorrect.</span>"
+        }
+        function rightAnswer () {
+            document.getElementById("right").innerHTML = "<span class='green'>Flase is incorrect.</span>"
+        }
+    </script>
+
+</head>
+<body>
+    <p>Java and JavaScript are the same thing.</p>
+    <p id="wrong" onclick="wrongAnswer();">True</p>
+    <p id="right" onclick="rightAnswer();">False</p>
+    <!--id is unique, only used once -->
+</body>
+</html>
