@@ -99,7 +99,7 @@ a:hover {
         flex-wrap: wrap;
         overflow-wrap: scroll;
     }
-    .imgbox {
+    .video {
         max-width: 100%;
         overflow-wrap: scroll;
     }
@@ -147,11 +147,14 @@ a:hover {
     .content {
         flex-wrap: wrap;
         overflow-wrap: scroll;
+        margin: 0%;
     }
     .video {
         max-width: 100%;
         overflow-wrap: scroll;
     }
+    
+    .circle {display: none;}
    
 
    
@@ -179,7 +182,7 @@ a:hover {
 body {
     background-image:url("../project/images/bck.jpg");
     background-repeat: no-repeat;
-    background-color: #D4E6E3;
+    background-color: #bfdff8;
 }
 h2 {
     font-family: 'Alegreya Sans SC';font-size: 1.375em;
@@ -231,6 +234,7 @@ h1 span {
     display: flex;
     margin-right: 120px;
     margin-top: 70px;
+    background-color: #bfdff8;
 }
 .video {
     position:relative;
