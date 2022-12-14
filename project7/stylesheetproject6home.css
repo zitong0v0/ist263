@@ -47,7 +47,7 @@ a:hover {
      #close {display: none;}
      #links a {display: block;} /* this will stack links since block is full width */
      #links {display: none;}
-     .myflexbox {display: flex; justify-content: space-between;}
+    
    
    
     #links {
@@ -72,33 +72,8 @@ a:hover {
     #links li a {
         margin-top: 20px;
     }
-    #links.active {
-        display: flex;
-    }
-   
-    .textbox {
-        margin: auto;
-    }
-    .content {
-        flex-wrap: wrap;
-        overflow-wrap: scroll;
-    }
-    .video {
-        max-width: 100%;
-        overflow-wrap: scroll;
-    }
 
-    h1 {
-        font-size: 25px;
-    }
-    h1 span {
-        font-size: 20px;
-    }
-
-   
-
-   
-   
+ 
 }
 
 
@@ -108,7 +83,7 @@ a:hover {
      #close {display: none;}
      #links a {display: block;} /* this will stack links since block is full width */
      #links {display: none;}
-     .myflexbox {display: flex; justify-content: space-between;}
+     
    
     #links {
         /* display: none; */
@@ -132,18 +107,11 @@ a:hover {
     #links li a {
         margin-top: 20px;
     }
-    .links.active {
-        display: flex;
-    }
    
-    .content {
-        flex-wrap: wrap;
-        overflow-wrap: scroll;
-        margin: 0%;
-    }
+   
     .video {
         max-width: 100%;
-        overflow-wrap: scroll;
+        
     }
     
     .circle {display: none;}
@@ -203,7 +171,7 @@ h1 span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    
 }
 .content .textbox {
     position: relative;
@@ -216,20 +184,22 @@ h1 span {
     padding: 40px;
     border-radius: 1em;
     background-color: #ffffff;
-    margin-left: 80px;
+    margin:20px;
+    /*margin-left: 80px;*/
 }
 .content .textbox a {
     display: inline-block;
     margin-top: 20px;
-    margin-left: 270px;
     padding: 8px 20px;
     background-color: #4a5662;
     color: #ffffff;
     border-radius: 40px;
     font-weight: 500;
     text-decoration: none;
+    
 }
 .content .imgbox {
+    flex: 1;
     width: 550px;
     display: flex;
     margin-right: 120px;
@@ -247,5 +217,24 @@ h1 span {
     height: 100%;
     background-color:#8888d7;
     clip-path: circle(300px at left 800px);
+}
+
+@media only screen and (max-width: 700px) {
+    h1 {
+        font-size: 25px;
+        margin: 10px;
+    }
+    h1 span {
+        font-size: 40px; 
+    }
+    .content {
+        flex-direction: column;
+    }
+    .content .textbox p {
+        font-size: 15px;
+    }
+
+   
+
 }
 
