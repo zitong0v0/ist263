@@ -186,6 +186,7 @@ h1, h2 {font-family: 'Ubuntu', sans-serif; font-weight: 500;}
 body {
     background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
 }
+/* Flexbox */
 .sections {
     display: flex;
     padding: 5px;
@@ -217,6 +218,17 @@ body {
     text-decoration: none;
     margin-left: 50px;  
 }
+
+
+
+/* Responsive for Collection Page Only */
+@media only screen and (max-width: 700px) {
+    .sections {
+        flex-direction: column;
+    }
+
+}
+
 
 
 

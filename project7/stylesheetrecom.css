@@ -177,6 +177,7 @@ body {
     background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
 }
 
+/* Flexbox */
 .part1 {
     display: flex;
     padding: 5px;
@@ -277,6 +278,26 @@ body {
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
+
+}
+
+
+/* Responsive for Recom Page Only */
+@media only screen and (max-width: 700px) {
+    .contactform {
+        flex-direction: column;
+    }
+    .part1 {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 35px;
+        padding: 5px;
+    }
+    p {
+        font-size: 15px;
+    }
+
 
 }
 
