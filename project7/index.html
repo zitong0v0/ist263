@@ -11,6 +11,16 @@
     <style>
         h1, h2 {font-family: 'Ubuntu', sans-serif; font-weight: 500;}
     </style>
+    <script>
+        function showNav () {
+            document.getElementById("links").style.display = "block";
+            document.getElementById("close").style.display = "block";
+        }
+        function hideNav () {
+            document.getElementById("links").style.display = "none";
+            document.getElementById("close").style.display = "none";
+        }
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
 </head>
@@ -22,14 +32,15 @@
         <header>
             <nav class="navbar">
                 <h2 class="navbrand">S. Collection</h2>
+
                 <!-- hamburger icon for mobile site -->
-                <a href="skeleton.html" class="toggle-button">
-                    <span class="bar">|</span>
-                    <span class="bar">|</span>
-                    <span class="bar">|</span>
-                </a>
+                <div class="myflexbox">
+                    <div><img src="https://laferger.github.io/ist263/images/hamburger.png" id="hamicon" onclick="showNav();"></div>
+                    <div><p id="close" onclick="hideNav();">X</p></div>
+                </div>
+
                 <!--nav bar list and links -->
-                <div class="links">
+                <div id="links">
                     <ul>
                         <li class="home">
                             <a href="index.html" tabindex="2">Home</a>

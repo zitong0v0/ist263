@@ -150,92 +150,138 @@ a:hover {
 }
 /* Nav bar home page ends here */
 
-/* ally */
-.skip {
-    background-color: #ffffff; /*put mouse on the color cube and click rgb to change to hex color*/
-    padding: 5px;
-    border: 1px solid black; /*solid + color means the color of the border*/
-    position: absolute;
-    top: 30px;
-    left: -999px; /* pushes it off screen */
-}
-/* focus is a psuedo class that means the element has been tabbed to */
-.skip:focus {
-    left: 10px;
-}
 
 
+/* Recom Page only starts here */
 
-
-/* Home Page styles goes here */
-body {
-    background-image:url("../project/images/bck.jpg");
-    background-repeat: no-repeat;
-    background-color: #bfdff8;
-}
-h2 {
-    font-family: 'Alegreya Sans SC';font-size: 1.375em;
-}
-h1 {
-    font-family: 'Alegreya Sans SC';font-size: 45px;
-    margin-left: 60px;
-}
-h1 span {
-    color:#405060;
-    font-size: 1.9em;
-    font-weight: 900;
-    margin-left: 20px;
-}
-
-.content {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.content .textbox {
-    position: relative;
-    max-width: 600px;
-}
-
-.content .textbox p {
+/*All same fonts for 3 pages*/    
+h2 {font-family: 'Philosopher', sans-serif; font-weight: 700;}
+h1 {font-family: 'Ubuntu', sans-serif; font-weight: 500;}
+p{font-family: 'Ubuntu', sans-serif; font-weight: 300;}
+.quote {
     font-family: 'Ubuntu', sans-serif; font-weight: 300;
-    font-size: 20px;
-    padding: 40px;
+    text-align: center;
+    padding: .2rem;
+}
+/* Recom page only */
+h1 {
+    text-align: center;
+    padding: 10px;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+.quote {
+    text-align: center;
+}
+body {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+.part1 {
+    display: flex;
+    padding: 5px;
+    margin: 10px;
+}
+.part1 div {
+    flex: 1;
+}
+
+
+.p2 {order: 1}
+.stationary {
+    order: 2
+}
+/* flexbox words part only */
+.p2 {
     border-radius: 1em;
     background-color: #ffffff;
-    margin-left: 80px;
-}
-.content .textbox a {
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 270px;
-    padding: 8px 20px;
-    background-color: #4a5662;
-    color: #ffffff;
-    border-radius: 40px;
-    font-weight: 500;
-    text-decoration: none;
-}
-.content .imgbox {
-    width: 550px;
-    display: flex;
-    margin-right: 120px;
-    margin-top: 70px;
-    background-color: #bfdff8;
-}
-.video {
-    position:relative;
-}
-.circle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color:#8888d7;
-    clip-path: circle(300px at left 800px);
 }
 
+/* 3 flexbox part only */
+.rement {
+    padding: 20px;
+}
+.planner {
+    padding: 20px;
+}
+.dailylike {
+    padding: 20px;
+}
+
+/* Form Part Only */
+.contactus {
+    font-size: 40px;
+}
+.part2 {
+    text-align: center;
+}
+.contactform {
+    display: inline-block;
+    background-image: #ffffff;
+    width: 40%;
+    padding: 40px;
+    text-align: center;
+    
+}
+.contactform .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline:  none;
+    resize: none;
+}
+.contactform .inputbox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline:  none;
+    resize: none;
+
+}
+.contactform .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox label:valid ~ span
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span
+{
+    color: #5f4c9d;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactform .inputbox input[type="submit"] {
+    width: 100px;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+
+
+
+
+/*Recom Page only ends here */
