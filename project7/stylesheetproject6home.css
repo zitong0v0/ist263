@@ -75,12 +75,9 @@ a:hover {
     #links.active {
         display: flex;
     }
-    h1 {
-        font-size: 2rem;
-    }
-    h1 span {
-        font-size: 3rem;
-
+   
+    .textbox {
+        margin: auto;
     }
     .content {
         flex-wrap: wrap;
@@ -90,6 +87,17 @@ a:hover {
         max-width: 100%;
         overflow-wrap: scroll;
     }
+
+    h1 {
+        font-size: 25px;
+    }
+    h1 span {
+        font-size: 20px;
+    }
+
+   
+
+   
    
 }
 
@@ -127,12 +135,7 @@ a:hover {
     .links.active {
         display: flex;
     }
-    h1 {
-        font-size: 2rem;
-    }
-    h1 span {
-        font-size: 3rem;
-    }
+   
     .content {
         flex-wrap: wrap;
         overflow-wrap: scroll;
@@ -144,6 +147,9 @@ a:hover {
     }
     
     .circle {display: none;}
+
+    
+
    
 
    
@@ -174,17 +180,21 @@ body {
     background-color: #bfdff8;
 }
 h2 {
-    font-family: 'Alegreya Sans SC';font-size: 1.375em;
+    font-size: 1.375em;
 }
 h1 {
-    font-family: 'Alegreya Sans SC';font-size: 45px;
+    position:relative;
+    
+    font-size: 40px;
     margin-left: 60px;
 }
 h1 span {
+    position:relative;
+   
+    font-family: 'Ubuntu', sans-serif; font-weight: 500;
+    font-size: 80px;
     color:#405060;
-    font-size: 1.9em;
-    font-weight: 900;
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 .content {
@@ -202,7 +212,7 @@ h1 span {
 
 .content .textbox p {
     font-family: 'Ubuntu', sans-serif; font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
     padding: 40px;
     border-radius: 1em;
     background-color: #ffffff;
