@@ -233,6 +233,12 @@ h1 span {
     .content .textbox p {
         font-size: 15px;
     }
+    .video {
+        display: none;
+    }
+    .content .textbox a {
+        text-align: center;
+    }
 
    
 
