@@ -226,6 +226,10 @@ body {
     .sections {
         flex-direction: column;
     }
+    h1 {
+        font-size: 35px;
+        padding: 5px;
+    }
 
 }
 
