@@ -196,6 +196,7 @@ h1 span {
     border-radius: 40px;
     font-weight: 500;
     text-decoration: none;
+    margin-left: 230px;
     
 }
 .content .imgbox {
@@ -208,6 +209,7 @@ h1 span {
 }
 .video {
     position:relative;
+    margin-left: 80px;
 }
 .circle {
     position: absolute;
@@ -237,7 +239,7 @@ h1 span {
         display: none;
     }
     .content .textbox a {
-        text-align: center;
+        justify-content: center;
     }
 
    
