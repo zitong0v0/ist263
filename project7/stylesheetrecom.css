@@ -150,6 +150,19 @@ a:hover {
 }
 /* Nav bar home page ends here */
 
+/* ally */
+.skip {
+    background-color: #ffffff; /*put mouse on the color cube and click rgb to change to hex color*/
+    padding: 5px;
+    border: 1px solid black; /*solid + color means the color of the border*/
+    position: absolute;
+    top: 30px;
+    left: -999px; /* pushes it off screen */
+}
+/* focus is a psuedo class that means the element has been tabbed to */
+.skip:focus {
+    left: 10px;
+}
 
 
 /* Recom Page only starts here */
